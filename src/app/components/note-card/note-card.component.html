@@ -1,0 +1,9 @@
+<nb-card class="note-card">
+  <nb-card-header class="note-card-header">
+    <span class="note-card-header-content" (click)="openNote.emit(note)">{{note?.title}}</span>
+    <nb-icon class="delete-icon" icon="trash-2-outline" status="danger" (click)="removeNote.emit(note)"></nb-icon>
+  </nb-card-header>
+  <nb-card-body class="note-card-body" (click)="openNote.emit(note)">
+    <p class="note-card-body-content">{{note?.body}}</p>
+  </nb-card-body>
+</nb-card>

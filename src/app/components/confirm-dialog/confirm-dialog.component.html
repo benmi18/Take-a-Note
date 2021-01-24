@@ -1,0 +1,10 @@
+  <nb-card class="confirm-modal">
+    <nb-card-header class="confirm-modal-header">Delete Note</nb-card-header>
+    <nb-card-body>
+      Are You Sure You Want To Delete This Note?
+    </nb-card-body>
+    <nb-card-footer class="confirm-modal-footer">
+      <button nbButton outline status="danger" (click)="submit()">Yes</button>
+      <button nbButton outline status="success" (click)="ref.close()">No</button>
+    </nb-card-footer>
+  </nb-card>

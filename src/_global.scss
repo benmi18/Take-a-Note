@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body * {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 19px !important;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 2px;
+  }
+}
+
+.grid {
+  display: grid;
+}
+nb-layout-header nav {
+  justify-content: center !important;;
+}
+nb-layout-column {
+  display: flex;
+  justify-content: center;
+}
